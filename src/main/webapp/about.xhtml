@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+	>
+	
+	<f:view>
+		<h:head>
+		</h:head>
+			<h:body>
+				<nav>
+					<h:form>
+						<h:commandLink action="#{navBean.pageIndex}" value="Index  "/>
+						<h:commandLink action="#{navBean.pageLogin}" value="Login  "/>
+						<h:commandLink action="#{navBean.pageAbout}" value="About  "/>
+					</h:form>
+				</nav>
+				<h1><h:outputText value="About" /></h1>
+				<h:inputText value="Username: #{loginBean.username}" />
+				
+			</h:body>
+
+	</f:view>
+	
+</html>
